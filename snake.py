@@ -15,6 +15,6 @@ class Snake(Reptile):
 
 snake_object = Snake()
 
-print(snake_object.limbs)
-print(snake_object.breathe())
+# print(snake_object.limbs)
+# print(snake_object.breathe())
 # We have double inheritance and Encapsulated in fucntions in parent classes
