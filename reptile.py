@@ -23,13 +23,13 @@ class Reptile(Animal):
 # Let's create an object of our Reptile class to utilise the amazing functionalities of OOP
 reptile_object = Reptile()
 
-print(reptile_object.eat())
-print(reptile_object.breathe())
-print(reptile_object.procreate())
-print("the above functionality is inherited from our Animal/Parent class")
-
-print(reptile_object.use_venum())
-
-print(reptile_object.seek_heat())
-print(reptile_object.hunt())
+# print(reptile_object.eat())
+# print(reptile_object.breathe())
+# print(reptile_object.procreate())
+# print("the above functionality is inherited from our Animal/Parent class")
+#
+# print(reptile_object.use_venum())
+#
+# print(reptile_object.seek_heat())
+# print(reptile_object.hunt())
 
