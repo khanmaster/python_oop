@@ -48,3 +48,55 @@ cat = Animal() # creating an object of Animal class
 
 ```__name__``` and ```__main__``` are used to check if the code is run from current file/directly for different file/importing it
 - we will create 2 files and use ```__name__``` and ```__main__``` in both files and the outcome will show the difference
+
+# getter and setter code along
+```python
+class Student:
+    def __init__(self, name, company):
+        self.name = name
+        self.company = company
+```
+- getters method with hidden information
+```
+    def getStudent(self, value):
+        self.__name # __ are used to hide the data
+```
+- defining a setters funtions
+```python
+
+    def setStudent(self, value):
+        self.__name = value
+```
+student_object = Student("Shahrukh", "Sparta Global")
+
+print("Student name is " + student_object.setStudent())
+```
+
+**Second Iteration**
+```
+class Student:
+    def __init__(self, name, company):
+        self.name = name
+        self.company = company
+- Using @property decorator with Student function
+```        
+    @property 
+    def Student(self, value):
+        print(" This setter method in student data")
+        self.__name # __ are used to hide the data
+```
+- A decorator in Python is any callable python object that is used to modify a function or a class
+```
+    @Student.setter
+    def Student(self, value):
+        print(" calling @student.student method")
+        self.__name = value
+```
+- creating an object with required information
+```
+student_object = Student("Shahrukh ", "Sparta Global")
+
+print("Student name is " + student_object.name)
+print("=" * 34)
+print("student works in "+ student_object.company)
+```
